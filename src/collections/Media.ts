@@ -9,7 +9,48 @@ export const Media: CollectionConfig = {
     {
       name: 'alt',
       type: 'text',
-      required: true,
+    },
+    {
+      name: "array",
+      type: "array",
+      fields: [
+        {
+          name: "test",
+          type: "text",
+        },
+        {
+          name: "testuiclient",
+          type: 'ui',
+          admin: {
+            components: {
+              Field: '@/ClientTestComponent'
+            }
+          }
+        },
+        {
+          name: "testuiserver",
+          type: 'ui',
+          admin: {
+            components: {
+              Field: '@/ServerTestComponent'
+            }
+          }
+        },
+      ],
+      admin: {
+        components: {
+          RowLabel: '@/ServerTestComponent',
+        }
+      }
+    },
+    {
+      name: "addRowButton",
+      type: 'ui',
+      admin: {
+        components: {
+          Field: '@/AddRowButton'
+        }
+      }
     },
   ],
   upload: true,
