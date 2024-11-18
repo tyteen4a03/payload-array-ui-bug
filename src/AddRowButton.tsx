@@ -20,7 +20,7 @@ const AddRowButton = () => {
   }
 
   return (
-    <button onClick={handleClick}>Add Row</button>
+    <button onClick={handleClick} type="button">Add Row</button>
   )
 }
 
