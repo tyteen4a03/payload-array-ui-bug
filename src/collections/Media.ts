@@ -23,7 +23,7 @@ export const Media: CollectionConfig = {
           type: 'ui',
           admin: {
             components: {
-              Field: '@/ClientTestComponent'
+              Field: '@/ClientTestComponent.tsx'
             }
           }
         },
@@ -32,14 +32,14 @@ export const Media: CollectionConfig = {
           type: 'ui',
           admin: {
             components: {
-              Field: '@/ServerTestComponent'
+              Field: '@/ServerTestComponent.tsx'
             }
           }
         },
       ],
       admin: {
         components: {
-          RowLabel: '@/ServerTestComponent',
+          RowLabel: '@/ServerTestComponent.tsx',
         }
       }
     },
@@ -48,7 +48,7 @@ export const Media: CollectionConfig = {
       type: 'ui',
       admin: {
         components: {
-          Field: '@/AddRowButton'
+          Field: '@/AddRowButton.tsx'
         }
       }
     },
